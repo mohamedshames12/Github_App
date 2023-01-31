@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>GitHib App</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">GitHib <span><i class="fa-brands fa-github"></i></span></a>
+        <nav class="navbar">
+            <a href="#">signup</a>
+            <a href="#">register</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="container-box">
+            <div class="user">
+                <h3>fetch repos by username</h3>
+                <div class="inputBox">
+                    <input type="text" required="required" id="username">
+                    <span>Username</span>
+                </div>
+                <button class="btn">get repos</button>
+            </div>
+            <div class="program">
+                <h3>TOPIC</h3>
+                <button data-lan="html">HTML</button>
+                <button data-lan="css">CSS</button>
+                <button data-lan="javascript">JavaScript</button>
+                <button data-lan="php">PHP</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="repos">
+        <p id="search-term"></p>
+        <div class="repos-box" id="repos">
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
